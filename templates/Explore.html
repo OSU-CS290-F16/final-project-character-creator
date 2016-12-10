@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+Index.html CS 290
+-->
+<html>
+
+	
+<head>
+<meta charset = "utf-8"> 
+<title>List of Characters </title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen">
+<link href="/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="wrapper">
+	<div id="menu">
+		<ul>
+			<li ><a href="index.html">Home</a></li>
+			<li ><a href="Create_Character.html">Create Character</a></li>
+			<li class="current_page_item"><a href = "/character">Explore Characters</a></li>
+			<li ><a href="About.html">About</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+	<div id="header">
+		<div id="logo">
+			<h1>List of All created Characters: </h1>
+		</div>
+	</div>
+	<main>
+	{{#each character}}
+	
+	<div class="character"> 
+	<li>First Name: {{first_name}} </li>
+	<li>Last Name: {{last_name}} </li>
+	<li>Gender: {{gender}} </li>
+	<li>Age: {{age}} </li>
+	<li>Height: {{height}} </li>
+	<li>Weight:{{weight}} </li>
+	<li>Ethics: {{ethics}} </li>
+	<li>Morality: {{morality}} </li>
+	<li>Race: {{race}} </li>
+	<li>{{birthsign}}</li>
+	<li> {{blessed}}</li>
+	<li>{{wealthy}}</li>
+	<li>{{heroic}}</li>	
+	<li>Strength:{{strength}} </li>
+	<li>Dexterity:{{dexterity}} </li>
+	<li>Constitution:{{constitution}} </li>
+	<li>Intelligence: {{intelligence}} </li>
+	<li>Wisdom: {{wisdom}} </li>
+	<li>Charisma: {{charisma}} </li>
+	</div>
+	{{/each}}
+	</main>
+	<!-- end #header -->
+
+</div>
+<div id="footer">
+	<p>&copy;Web Page Created by Scott Russell. </p>
+</div>
+<!-- end #footer -->
+</body>
+
+</html>

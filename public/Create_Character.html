@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+	Character Creation Page:
+	CS 290: Scott Russell
+-->
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"> type="text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+
+<meta charset = "utf-8"> 
+<title>Character Creation Page</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen">
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+
+<!--
+ <?php  
+ $message = '';  
+ $error = '';  
+ if(isset($_POST["submit"]))  
+ {  
+     
+		   console.log("TEST TEST");
+                $current_data = file_get_contents('../character.json');  
+                $array_data = json_decode($current_data, true);  
+                $extra = array(  
+                     'first_name'=> $_POST['first_name'],  
+                     'last_name'=> $_POST["last_name"],  
+                     'gender'=> $_POST["gender"]  
+                );  
+                $array_data[] = $extra;  
+                $final_data = json_encode($array_data);  
+                if(file_put_contents('../character.json', $final_data))  
+                {  
+                     $message = "<label class='text-success'>Character Created Successfully</p>";  
+                }    
+           else  
+           {  
+                $error = 'JSON File not exits';  
+           }  
+      }  
+ }  
+?>
+ -->
+ 
+
+<div id="wrapper"> </div>
+	<div id="menu">
+		<ul>
+			<li ><a href="index.html">Home</a></li>
+			<li class="current_page_item"><a href="Create_Character.html">Create Character</a></li>
+			<li><a href="/character">Explore Characters</a></li>
+			<li ><a href="About.html">About</a></li>
+		</ul>
+	</div>
+	<!-- end #menu -->
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#"> Character Creation: </a></h1>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div class="banner">
+
+	</div>
+
+<form method="post">
+
+  <fieldset> <legend> Character Traits </legend>
+<p>
+First Name: <input type = "text" name = "first_name" required/> </p>
+</p>
+  
+  <p>
+Last Name: <input type = "text" name = "last_name" required/> </p>
+</p>
+   <label> Gender: <br>
+  <input type="radio" required name="gender" value="Male"> Male<br>
+  <input type="radio" required name="gender" value="Female"> Female<br>
+  <input type="radio" required name="gender" value="Other"> Other
+   </label>
+   
+       <p>
+    <label> Age:
+      <input type = "number" min="1" name="age" required>
+       </label>
+	  </p>
+ 
+ 
+      <p>
+    <label> Height(In Inches):
+      <input type = "number" min="6" max="200" name="height" required>
+       </label>
+	  </p>
+  
+              <p>
+    <label> Weight (in Pounds) :
+      <input type = "number" min="10" max="1000" name="weight" required>
+       </label>
+	  </p>
+	 
+ 
+  
+   
+  
+    
+      <div> Allignment:</div>
+<p>
+<label>Ethics:
+<select required name "ethics">
+<option value="" selected="selected">Select Ethics</option>
+<option value="neutral" required >Lawful</option>
+<option value="lawful" required >Neutral</option>
+<option value="chaotic" required >Chaotic</option>
+</select>
+</label> 
+</p>
+    <p>
+<label>Morality:
+<select required name="morality">
+<option value="" selected="selected">Select Morality</option>
+<option value="neutral" required >Good</option>
+<option value="lawful" required>Neutral</option>
+<option value="chaotic" required >Evil</option>
+</select>
+</label> 
+</p>
+     
+  </fieldset>
+
+<fieldset>
+<legend>Select A Race: </legend>
+  <p><label> <input type="radio" name="race" required value="Human" > Human </label></p>
+<p><label> <input type="radio" name = "race" required value="Dwarf"> Dwarf </label></p>
+<p><label> <input type="radio" name="race" required value="Elf"> Elf </label></p>
+  <p><label> <input type="radio" name="race" required value="Half-elf"> Half Elf </label></p>
+<p><label> <input type="radio" name="race" required value="Halfling"> Halfling </label></p>
+  <p><label> <input type="radio" name="race" required value="Gnome"> Gnome </label></p>
+  <p><label> <input type="radio" name="race" required value="Half-orc"> Half-Orc </label></p>
+</fieldset>
+
+<fieldset>
+<legend>Special Traits <br> (optional) </legend>
+<p><label> <input type="checkbox" name="birthsign" value="Has Birthsign"> Birth Sign </label></p>
+<p><label> <input type="checkbox" name="blessed" value="Is blessed"> Blessed </label></p>
+<p><label> <input type="checkbox" name="wealthy" value="Is Wealthy"> Wealthy </label></p>
+<p><label> <input type="checkbox" name="heroic" value="Is Heroic"> Heroic </label></p>
+</fieldset>
+
+<fieldset>
+<legend>Character Stats (from 8-18)</legend>
+<p><label>Strength: <input type="number" min="8" max="18" name ="strength" required></label></p>
+<p><label>Dexterity: <input type="number" min="8" max="18" name ="dexterity" required></label></p>
+<p><label>Constitution: <input type="number" min="8" max="18" name ="constitution" required></label></p>
+<p><label>Intelligence: <input type="number" min="8" max="18" name ="intelligence" required></label></p>
+<p><label>Wisdom: <input type="number" min="8" max="18" name ="wisdom" required></label></p>
+<p><label>Charisma: <input type="number" min="8" max="18" name ="charisma" required></label></p>
+
+</fieldset>
+<p><input type = "submit" name="submit" value="Append"> Create Character! </input></p>
+
+</form>	
+
+
+</body>
+
+</html>

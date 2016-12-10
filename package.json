@@ -1,0 +1,24 @@
+{
+  "name": "Final-Project",
+  "version": "1.0.0",
+  "description": "Character Creation Website.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OSU-CS290-F16/master-assignment-3.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/OSU-CS290-F16/master-assignment-3/issues"
+  },
+  "homepage": "https://github.com/OSU-CS290-F16/master-assignment-3#readme",
+  "dependencies": {
+   "express": "^4.14.0",
+    "handlebars": "^4.0.5"
+  }
+}

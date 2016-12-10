@@ -1,0 +1,62 @@
+{
+	"JOHNCENA":{
+		"first_name": "John",
+		"last_name": "Cena",
+		"gender": "male",
+		"age": "39",
+		"height": "73",
+		"weight": "251",
+		"ethics": "lawful",
+		"morality": "good",
+		"race": "human",
+		"strength": "18",
+		"dexterity": "16",
+		"constitution": "18",
+		"intelligence": "8",
+		"wisdom": "8",
+		"charisma": "8",
+		"blessed":"Is Blessed"
+	
+	},
+	"ScottRussell":{
+		"first_name": "Scott",
+		"last_name": "Russell",
+		"gender": "male",
+		"age": "21",
+		"height": "70",
+		"weight": "160",
+		"ethics": "lawful",
+		"morality": "good",
+		"race": "human",
+		"strength": "15",
+		"dexterity": "13",
+		"constitution": "16",
+		"intelligence": "15",
+		"wisdom": "16",
+		"charisma": "12"
+	
+	},
+	
+	"DonnaRussell":{
+		"first_name": "Donna",
+		"last_name": "Russell",
+		"gender": "female",
+		"age": "57",
+		"height": "62",
+		"weight": "120",
+		"ethics": "lawful",
+		"morality": "good",
+		"race": "elf",
+		"strength": "11",
+		"dexterity": "16",
+		"constitution": "17",
+		"intelligence": "18",
+		"wisdom": "18",
+		"charisma": "18"
+	
+	}
+	
+	
+	
+	
+	}
